@@ -118,6 +118,8 @@ def input_handler(options, input_type):
             conformation_list.append(varify)
     else:
         print('error, please choose the correct option\n')
+        conformation_list.clear()
+
 
 
 #the reponse check cycle
@@ -134,11 +136,14 @@ while True:
     #drink temprature input + varification
     input_handler(drink_tempratures, 'temprature')
     if drink_temprature_new is None:
+        drink_type_new = None
         continue
 
     #drink size input + varification
     input_handler(drink_sizes, 'size')
     if drink_size_new is None:
+        drink_type_new = None
+        drink_temprature_new = None
         continue
 
 
