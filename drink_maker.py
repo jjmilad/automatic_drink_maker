@@ -160,7 +160,7 @@ while True:
     #ending
     print('\n\n\n')
     print('thank you for ordering !\n happy drinking :)')
-    next_order = input('do you want to order more 1 for yes , 0 or no : ')
+    next_order = input('do you want to order more, 1 for yes , or any key to exit : ')
     if next_order == str(1):
         continue
     break
